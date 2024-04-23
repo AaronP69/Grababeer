@@ -41,7 +41,7 @@ class UserCreateRetriveUpdateDestroy(APIView):
 
             user.save()
 
-            return JsonResponse({'response': 'User as been registered'}, status=201)
+            return JsonResponse({'response': 'User as been registered !'}, status=201)
 
         return JsonResponse({
             'errors': serializer.errors,
