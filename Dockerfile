@@ -4,4 +4,6 @@ WORKDIR /app
 COPY requirements.txt /app/
 RUN pip install -r requirements.txt
 RUN pip install django-cors-headers
-COPY . ./
+COPY . /app/
+
+WORKDIR /app
